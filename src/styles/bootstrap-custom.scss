@@ -1,0 +1,9 @@
+.row {
+    min-height: 150px;
+}
+
+.row > div {
+    background-color: lightgray;
+    border: 2px solid darkgray;
+    margin: 5px;
+}

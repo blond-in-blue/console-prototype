@@ -1,0 +1,20 @@
+$item-padding: 10px;
+.masonry-grid {
+  padding: $item-padding;
+}
+
+.masonry-item {
+  padding: .5rem;
+  max-width: calc(100% - #{$item-padding});
+}
+
+.masonry-content {
+  background-color: lighten(black, 90%);
+  padding: $item-padding;
+  box-shadow: 1px 1px 10px lighten(black, 90%);
+  border-radius: 10px;
+}
+
+.wrapper {
+  padding-bottom: 10px;
+}

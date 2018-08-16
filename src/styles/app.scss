@@ -1,0 +1,18 @@
+//
+// app style imports 
+// don't put any rules in this file, only imports
+// the order of the imports matters here, where priority increases from top to bottom
+//
+
+// helpers
+@import './constants';
+@import './colors';
+
+// third-party
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~font-awesome/css/font-awesome.css';
+@import './material-theme';
+
+// app
+@import './bootstrap-custom';
+@import './core';

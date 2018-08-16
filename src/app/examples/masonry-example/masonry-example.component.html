@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class='ml-3 mt-3 text-center'>
+    <button type='button' class='btn btn-primary' (click)='updateLayout()'>Update Layout</button>
+  </div>
+  <ngx-masonry #masonryGrid [options]='masonryOptions' class='masonry-grid'>
+    <ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems; let index = index" [ngStyle]="{'width': item.width}">
+      <div class="masonry-content">
+        <p class='h5'>
+          item {{index + 1}}
+        </p>
+        <p> 
+          width: {{item.width}}
+        </p>
+        <p>
+            As spotted by BuzzFeed, 23-year-old English and creative writing high school teacher Rebecca Newby of Pine Bluff, Ark., came up with a cool way to make bathroom breaks fun: by fashioning a hall pass out of the popular "My Momma Said" Cardi B meme.
+  
+            The meme, which blew up earlier this year when the "I Like It" rapper posted a picture of her 5-year-old self, hand saucily on hip, has been refashioned by Newby into a hall pass with phrases including "Ms. Newby said I can go to the restroom" and "Ms. Newby said I can go to the library."
+            
+            Explaining her twist on the boring old hall pass, Newby told BuzzFeed, "My students love Cardi B, and so do I, by the way." Printing out the meme, laminating it and hot-gluing them to cardboard "literally cost me $0 and took only a matter of minutes," she added.
+                      
+            Fellow “Mooo!” lovers won’t have to wait long to hear the legen-dairy song in person. Doja Cat will perform the track on her upcoming tour in September for her album, “Amala.”
+        </p>
+        <div>
+          {{item.title}}
+        </div>
+      </div>
+    </ngxMasonryItem>
+  </ngx-masonry>
+</div>
