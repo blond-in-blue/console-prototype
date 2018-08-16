@@ -6,3 +6,6 @@ $navbar-height: 56px;
     height: calc(100vh - #{$navbar-height});
     overflow: auto;
 }
+.nav-link.active-link {
+    color: lightblue;
+}
