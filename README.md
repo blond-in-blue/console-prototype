@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Before performing any of the below steps, run `yarn` to install all packages.
 
-If you haven't already, install Angular CLI with `yarn add @angular/cli`.
+If you haven't already, install Angular CLI with `yarn global add @angular/cli`.
 
 ## Development server
 
