@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgxMasonryOptions, NgxMasonryComponent } from 'ngx-masonry';
 import { PersonTableComponent } from './cards/person-table/person-table.component';
+import * as faker from 'faker';
 
 @Component({
   selector: 'app-masonry-example',
@@ -39,7 +40,12 @@ export class MasonryExampleComponent implements OnInit {
   }
 
   updateLayout() {
-    this.masonryGrid.ngOnInit();
+    for (const item of this.masonryItems) {
+      const randomWidth = Math.floor(Math.random() * Object.keys(Widths).length);
+      const i2 = Object.keys(Widths)[randomWidth];
+      item.width = Widths[i2];
+    }
+    this.masonryGrid.layout();
   }
 }
 

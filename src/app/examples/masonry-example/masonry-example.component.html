@@ -1,6 +1,6 @@
 <div class="wrapper">
   <div class='ml-3 mt-3 text-center'>
-    <button type='button' class='btn btn-primary' (click)='updateLayout()'>Update Layout</button>
+    <button type='button' class='btn btn-primary' (click)='updateLayout()'>Randomize Layout</button>
   </div>
   <ngx-masonry #masonryGrid [options]='masonryOptions' class='masonry-grid'>
     <ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems; let index = index" [ngStyle]="{'width': item.width}">
