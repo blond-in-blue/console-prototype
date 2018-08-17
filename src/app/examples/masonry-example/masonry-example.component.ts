@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgxMasonryOptions, NgxMasonryComponent } from 'ngx-masonry';
-import { PersonTableComponent } from './cards/person-table/person-table.component';
 import { ContentItem } from '../../shared/dynamic-content/content-item';
+import { PersonTableComponent } from './cards/person-table/person-table.component';
+import { BootstrapExampleComponent } from '../bootstrap-example/bootstrap-example.component';
+import { GridsterExampleComponent } from '../gridster-example/gridster-example.component';
 
 @Component({
   selector: 'app-masonry-example',
@@ -13,18 +15,18 @@ export class MasonryExampleComponent implements OnInit {
   @ViewChild(NgxMasonryComponent) masonryGrid: NgxMasonryComponent;
 
   masonryItems = [
-    { title: new ContentItem(PersonTableComponent), width: Widths.large, height: Heights.large },
-    { title: '', width: Widths.medium, height: Heights.small },
-    { title: '', width: Widths.medium, height: Heights.medium },
-    { title: '', width: Widths.medium, height: Heights.medium },
-    { title: '', width: Widths.medium, height: Heights.large },
-    { title: '', width: Widths.small, height: Heights.large },
-    { title: '', width: Widths.small, height: Heights.medium },
-    { title: '', width: Widths.small, height: Heights.small },
-    { title: '', width: Widths.medium, height: Heights.medium },
-    { title: '', width: Widths.medium, height: Heights.medium },
-    { title: '', width: Widths.small, height: Heights.small },
-    { title: '', width: Widths.small, height: Heights.small },
+    { title: new ContentItem(BootstrapExampleComponent), width: Widths.large, height: Heights.large },
+    { title: new ContentItem(GridsterExampleComponent), width: Widths.medium, height: Heights.small },
+    { title: new ContentItem(PersonTableComponent), width: Widths.medium, height: Heights.medium },
+    { title: new ContentItem(GridsterExampleComponent), width: Widths.medium, height: Heights.medium },
+    { title: new ContentItem(BootstrapExampleComponent), width: Widths.medium, height: Heights.large },
+    { title: new ContentItem(PersonTableComponent), width: Widths.small, height: Heights.large },
+    { title: new ContentItem(PersonTableComponent), width: Widths.small, height: Heights.medium },
+    { title: new ContentItem(BootstrapExampleComponent), width: Widths.small, height: Heights.small },
+    { title: new ContentItem(PersonTableComponent), width: Widths.medium, height: Heights.medium },
+    { title: new ContentItem(BootstrapExampleComponent), width: Widths.medium, height: Heights.medium },
+    { title: new ContentItem(PersonTableComponent), width: Widths.small, height: Heights.small },
+    { title: new ContentItem(PersonTableComponent), width: Widths.small, height: Heights.small },
   ];
 
   masonryOptions: NgxMasonryOptions = {
@@ -34,7 +36,7 @@ export class MasonryExampleComponent implements OnInit {
     transitionDuration: '0.3s',
   };
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit() {
   }

@@ -18,7 +18,6 @@ import { GridsterExampleComponent } from './gridster-example/gridster-example.co
 import { MasonryExampleComponent } from './masonry-example/masonry-example.component';
 import { PersonTableComponent } from './masonry-example/cards/person-table/person-table.component';
 import { SharedModule } from '../shared/shared.module';
-import { ContentHostContainerComponent } from '../shared/dynamic-content/content-host-container/content-host-container.component';
 
 @NgModule({
   imports: [
@@ -49,6 +48,7 @@ import { ContentHostContainerComponent } from '../shared/dynamic-content/content
   ],
   entryComponents: [
     PersonTableComponent,
-  ]
+  ],
+  providers: []
 })
 export class ExamplesModule { }

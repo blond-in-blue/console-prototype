@@ -2,9 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
 
-Before performing any of the below steps, run `yarn` to install all packages.
-
-If you haven't already, install Angular CLI with `yarn global add @angular/cli`.
+Before performing any of the below steps...
+- be sure you have [yarn](https://yarnpkg.com/en/docs/install) installed
+- run `yarn` at the project base to install all packages
+- if you haven't already done so, install Angular CLI with `yarn global add @angular/cli`
 
 ## Development server
 
