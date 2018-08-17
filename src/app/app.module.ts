@@ -9,7 +9,7 @@ import { ExamplesModule } from './examples/examples.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,8 @@ import { BootstrapExampleComponent } from './bootstrap-example/bootstrap-example
 import { GridsterExampleComponent } from './gridster-example/gridster-example.component';
 import { MasonryExampleComponent } from './masonry-example/masonry-example.component';
 import { PersonTableComponent } from './masonry-example/cards/person-table/person-table.component';
+import { SharedModule } from '../shared/shared.module';
+import { ContentHostContainerComponent } from '../shared/dynamic-content/content-host-container/content-host-container.component';
 
 @NgModule({
   imports: [
@@ -31,7 +33,8 @@ import { PersonTableComponent } from './masonry-example/cards/person-table/perso
     MatCheckboxModule,
     MatSidenavModule,
     MatListModule,
-    NgxMasonryModule
+    NgxMasonryModule,
+    SharedModule,
   ],
   declarations: [
     GridsterExampleComponent,
@@ -41,6 +44,9 @@ import { PersonTableComponent } from './masonry-example/cards/person-table/perso
   ],
   exports: [
     GridsterExampleComponent
+  ],
+  entryComponents: [
+    PersonTableComponent,
   ]
 })
 export class ExamplesModule { }

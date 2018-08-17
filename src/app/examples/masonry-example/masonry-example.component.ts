@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgxMasonryOptions, NgxMasonryComponent } from 'ngx-masonry';
 import { PersonTableComponent } from './cards/person-table/person-table.component';
-import * as faker from 'faker';
+import { ContentItem } from '../../shared/dynamic-content/content-item';
 
 @Component({
   selector: 'app-masonry-example',
@@ -13,7 +13,7 @@ export class MasonryExampleComponent implements OnInit {
   @ViewChild(NgxMasonryComponent) masonryGrid: NgxMasonryComponent;
 
   masonryItems = [
-    { title: PersonTableComponent, width: Widths.large, height: Heights.large },
+    { title: new ContentItem(PersonTableComponent), width: Widths.large, height: Heights.large },
     { title: '', width: Widths.medium, height: Heights.small },
     { title: '', width: Widths.medium, height: Heights.medium },
     { title: '', width: Widths.medium, height: Heights.medium },
