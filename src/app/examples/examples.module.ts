@@ -43,7 +43,9 @@ import { ContentHostContainerComponent } from '../shared/dynamic-content/content
     PersonTableComponent
   ],
   exports: [
-    GridsterExampleComponent
+    GridsterExampleComponent,
+    BootstrapExampleComponent,
+    MasonryExampleComponent
   ],
   entryComponents: [
     PersonTableComponent,
