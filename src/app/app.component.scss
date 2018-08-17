@@ -1,0 +1,11 @@
+
+$navbar-height: 56px;
+
+.content-wrapper {
+    width: 100vw;
+    height: calc(100vh - #{$navbar-height});
+    overflow: auto;
+}
+.nav-link.active-link {
+    color: lightblue;
+}

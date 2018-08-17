@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">{{title}}</a>
+  <div>
+    <ul class="navbar-nav">
+      <li class="nav-item" *ngFor='let navLink of navLinks'>
+        <a class="nav-link" routerLink={{navLink.path}} routerLinkActive="active-link">{{navLink.label}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class='content-wrapper'>
+  <router-outlet></router-outlet>
+</div>

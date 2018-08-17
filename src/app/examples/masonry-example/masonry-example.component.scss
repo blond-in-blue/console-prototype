@@ -1,0 +1,23 @@
+$item-spacing: 10px;
+
+.masonry-grid {
+  padding: $item-spacing;
+  padding-right: 0;
+  margin-right: $item-spacing;
+}
+
+.masonry-item {
+  padding: 10px;
+  max-width: calc(100% - #{$item-spacing});
+}
+
+.masonry-content {
+  background-color: lighten(black, 90%);
+  padding: $item-spacing;
+  box-shadow: 1px 1px 10px lighten(black, 90%);
+  border-radius: 10px;
+}
+
+.wrapper {
+  padding-bottom: 10px;
+}
