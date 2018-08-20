@@ -4,7 +4,7 @@
   </div>
   <ngx-masonry #masonryGrid [options]='masonryOptions' class='masonry-grid'>
     <ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems; let index = index" [ngStyle]="{'width': item.width}">
-      <div class="masonry-content">
+      <div class="masonry-content" [ngStyle]="{'height': item.height}">
         <p class='h5'>
           item {{index + 1}}
         </p>

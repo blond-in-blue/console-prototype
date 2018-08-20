@@ -9,6 +9,8 @@ $item-spacing: 10px;
 .masonry-item {
   padding: 10px;
   max-width: calc(100% - #{$item-spacing});
+
+  overflow: auto;
 }
 
 .masonry-content {
@@ -16,6 +18,8 @@ $item-spacing: 10px;
   padding: $item-spacing;
   box-shadow: 1px 1px 10px lighten(black, 90%);
   border-radius: 10px;
+
+  overflow: auto;
 }
 
 .wrapper {
