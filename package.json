@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-io": "ng build --prod --base-href 'https://blond-in-blue.github.io/console-prototype/'; ngh --dir=./dist/console-prototype;"
+    "build-io": "ng build --prod --base-href 'https://blond-in-blue.github.io/console-prototype/'; ngh --dir=./dist/console-prototype --repo='https://github.com/blond-in-blue/console-prototype.git';"
   },
   "private": true,
   "dependencies": {
